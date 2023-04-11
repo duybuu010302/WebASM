@@ -1,0 +1,577 @@
+.container{
+    background: whitesmoke;
+    max-width: 1470px;
+    padding: 0;
+    margin: auto;
+}
+*{
+    box-sizing: border-box;
+}
+/* .hea{
+    position: fixed;
+    height: 51px;
+    
+} */
+header{
+    max-width: 1200px;
+    display: flex;
+    border-bottom: solid 2px #6B728E;
+    justify-content: center;
+    height: 51px;
+    margin: auto;
+}
+.logi-develity{
+    min-width: 20%;
+    float: left;
+}
+.logo{
+    position: relative;
+    display: block;
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    text-align: center;
+}
+.logo img{
+    height: 50px;
+}
+.login{
+    margin-top: 15px;
+    min-width: 30%;
+    display: block;
+    float: right;
+}
+.cart{
+    float: right;
+}
+.thea{
+    color: green;
+    position: relative;
+    border: 1px green solid;
+    padding: 7px 35px 5px 10px;
+    text-decoration: none;
+}
+.login .icon{
+    display: none;
+}
+.fas{
+    color: green;
+}
+.car1{
+    float: right;
+}
+.cart2 a{
+    display: none;
+}
+.btn-toggle-menu{
+    cursor: pointer;
+    display: none;
+}
+#toggle-menu{
+   display: none;
+}
+.login .khong{
+    position: absolute;
+    top: -5px;
+    
+}
+.vn{
+    margin-right: 10px;
+    float: right;
+}
+.dn{
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+}
+nav {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: calc();
+    padding: 0 ;
+    /* width: 1170px; */
+    
+}
+nav ul{
+   display: flex;
+    text-align: center;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px 0 10px;
+}
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #6B728E;
+    padding: 10px 15px;
+    font-weight: 900;
+}
+nav ul li a:hover{
+    color: green;
+}
+.banner{
+    width: 100%;
+    height: 500px;
+}
+.banner img{
+    width: 100%;
+}
+.slide{
+    margin-top: -17%;
+}
+.ti-angle-left{
+    cursor: pointer;
+    font-size: 40px;
+}
+.ti-angle-right{
+    cursor: pointer;
+    font-size: 40px;
+    position: absolute;
+    right: 10px;
+}
+@media screen and (max-width:768px){
+    header{
+       
+        flex-wrap: wrap;
+        border-bottom: none;
+       
+    }
+    .logi-develity{
+       display: none;
+    }
+    .logo{
+    position: relative;
+    display: block;
+    float: left;
+   width: 100px;
+}
+.login{
+
+    margin-left: auto;
+    display: flex;
+   justify-content: flex-end;
+ 
+}
+.login .icon{
+    display: block;
+}
+.logo img{
+    width: 80px;
+    height: 40px;
+
+   
+}
+.login .khong{
+   display: none;
+    
+}
+
+.cart{
+    display: none;
+}
+.car1{
+    display: none;
+}
+.btn-toggle-menu{
+    display: unset;
+    cursor: pointer;
+    padding-left: 10px;
+    
+}
+nav {
+  flex-wrap: wrap;
+    /* width: 1170px; */
+    
+}
+.menu{
+    display: none;
+}
+#toggle-menu:checked + .menu{
+    width: 100%;
+    display: block;
+}
+nav ul li:hover{
+    background-color: #524949;
+    color: green;
+}
+.banner{
+    height: 300px;
+}
+    
+}
+.pro{
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+@media screen and (max-width:768px){
+    .pro{
+        display: block;
+        max-width: 350px;
+
+    }
+    .sanpham{
+        width: 30%;
+    }
+    .sanpham img{
+        margin-top: 30px;
+        width: 100%;
+        height: 150px;
+    }
+    .nd{
+        display: none;
+    }
+}
+.sanpham img{
+    margin-top: 30px;
+    width: 200px;
+    height: 150px;
+}
+.sanpham .price{
+    color: green;
+    font-weight: bold;
+}
+.sanpham{
+    background: white;
+    margin-right: 20px;
+    width: 350px;
+    /* margin-right: 15px; */
+    /* width: 30%; */
+    border: 3px green solid;
+    border-radius: 5px  ;
+    text-align: center;
+   /* float: left; */
+   margin-top: 3%;
+  
+    
+}
+.sanpham .sanpham-img{
+    position: relative;
+    overflow: hidden;
+}
+.sanpham .sanpham-info {
+    padding: 5px 0px;
+}
+.sanpham:hover{
+    box-shadow: gray 3px 3px 3px 3px;
+}
+
+.sanpham:hover .sanpham-img a.buy-now{
+    bottom: 0px;
+    
+}
+.sanpham .sanpham-img a.buy-now{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgb(63, 119, 7);
+    color: #fff;
+    display: block;
+    padding: 9px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: -36px;
+    transition: 0.25s ease-in-out;
+    opacity: 0.80;
+}
+
+.nd #name{
+    text-align: center;
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.i{
+    text-align: center;
+}
+.nd{
+    width: 1000px;
+    min-height: 200px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer{
+    clear: both;
+    background: green;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    font-size: 15px;
+
+}
+.imgg{
+    float: left;
+    height: 350px;
+}
+.item{
+   min-height: 500px; 
+}
+.item .pri{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: green;
+}
+.add .tru{
+    border-radius: 0 4px 4px 0;
+}
+.add span{
+    border: 1px solid silver;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.add .cong{
+    border-radius: 4px 0 0 4px;
+}
+.add .mot{
+    border-left: none;
+    border-right: none;
+}
+.product1{
+    float: left;
+    
+   
+}
+.dathang{
+    color: black;
+}
+.product1 .dathang:hover{
+    cursor: pointer;
+    background: green;
+    color: white;
+}
+.content{
+   width: 450px;
+      float: left;
+      margin-left: 100px;
+}
+.content ul{
+    
+    list-style: none;
+}
+.content ul li{
+    line-height: 25px;
+    white-space: 40px;
+}
+.sanphamlienquan{
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+    width: 1300px;
+   margin: auto;
+}
+#act{
+    max-width: 1000px;
+    margin: auto
+}
+.row{
+    margin-top: 40px;
+    border-bottom: grey 1px solid;
+}
+.row .thongtin1{
+    width: 400px;
+    float: right;
+}
+.row2 .thongtin2{
+    float: left;
+    width: 400px;
+    
+}
+.row2 img{
+    margin-top: 30px;
+   float: right;
+    width: 400px;
+    height: 450px;
+}
+#act .gt{
+    text-align: center;
+    border-bottom: 1px solid gray;
+    font-size: 30px;
+    
+    
+}
+.login-form-container{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background: rgba(51, 50, 50, 0.8);
+    position: fixed;
+    
+    top: -115%; left: 0; 
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+.login-form-container form{
+    background: #fff;
+    border:var(--border);
+    width: 35rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin: 2rem;
+}
+.login-form-container form h3{
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+
+}
+.login-form-container form span{
+    display: block;
+    font-size: 20px;
+    padding-top: 10px;
+
+}
+.login-form-container form .box{
+    width: 400px;
+    margin: .3rem 0;
+    font-size: 1rem;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 1rem .2rem;
+    color: var(--black);
+    text-transform: none;
+}
+.login-form-container form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+
+}
+.login-form-container form .checkbox label{
+    font-size: 1rem;
+    color: var(--light-color);
+    cursor: pointer;
+
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: green;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: darkgreen;
+}
+.login-form-container form .btn{
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;   
+}
+.login-form-container form p{
+    padding-top: .5rem;
+    color: var(--light-color);
+    font-size: 1rem;
+}
+.login-form-container form p a{
+    color: green;
+    text-decoration: underline;
+
+}
+.login-form-container form #close-login-btn{
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    top: 5.2rem;
+    width: 20px;
+    border:black 1px solid;
+    border-radius: 0 6px 0 6px;
+    right: 28.2rem;
+    cursor: pointer;
+    background-color: white
+}
+.login-form-container.active{
+   top: 0;
+}
+#giohang {
+    margin: auto;
+}
+#giohang tr{
+    border-bottom: 1px solid grey;
+}
+#myCart tr th{
+   
+    height: 100px;
+}
+#myCart {
+    float: left;
+    width: 900px;
+    text-align: center;
+    margin: auto;
+}
+#showcar tr td{
+    border-bottom: 1px solid grey;
+    height: 150px;
+}
+
+.hinh{
+    width: 100px;
+}
+#form form{
+    height: 450px;
+    background-color: white;
+    padding: 7px;
+    float: right;
+    font-size: 15px;
+    font-family: system-ui;
+    margin-right: 20px;
+    border-radius: 4px ;
+}
+#form h1{
+    text-align: center;
+}
+#form label{
+    width: 150px;
+    display: inline-block;
+    color: black;
+}
+#form .txt{
+    width: 350px;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 10px;
+}
+#form .but{
+    text-align: center;
+}
+#form .but button{
+    background-color: green;
+    width: 100px;
+    height: 30px;
+    font-family: unset;
+    line-height: 20px;    
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+font-weight: 600    ;
+
+}
+#form .but button:hover{
+    background-color: darkgreen;
+}
+.title{
+    clear: left;
+}

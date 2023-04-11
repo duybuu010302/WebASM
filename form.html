@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        margin: 0 auto;
+        text-align: center;
+    }
+    h1{
+        font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    #sdt{
+        width: 200px;
+        height: 30px;
+        border-radius: 3px;
+    }
+    #sub{
+        margin-top: 5px;
+        width: 209px;
+        height: 30px;
+        background-color: green;
+        color: white;
+        border-radius: 3px;
+        border: green;
+        margin: auto;
+    }
+</style>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Phúc Long Xin Chào</h1>
+            <h2>Đăng Nhập</h2>
+            <input type="text" id="sdt" placeholder="Số điện thoại*" onblur="check();"><br>
+            <div id="null"></div>
+            <input type="submit" id="sub">
+        </form>
+    </div>
+</body>
+<script>
+     document.getElementById("sub").style.display = "none"
+    function check(){
+        var a = document.getElementById("sdt").value;
+        if(a == ""){
+            document.getElementById("null").innerText = "Vui lòng nhập số điện thoại";
+            document.getElementById("null").style.color = "red";
+            
+        }
+        else if(isNaN(a)){
+            document.getElementById("null").innerText="Vui lòng nhập số";
+            document.getElementById("null").style.color = "red";
+            document.getElementById("sub").style.display = "block";
+        }
+        else if(a.length < 10 ){
+            document.getElementById("null").innerText="Vui lòng nhập từ 10 số trở lên";
+            document.getElementById("null").style.color = "red";
+            document.getElementById("sub").style.display = "block";
+        }
+        else{
+            document.getElementById("null").style.color = "";
+            document.getElementById("sub").style.display = "block";
+        }
+    }
+    // function checkdn(){
+    //         check();
+    //     }
+</script>
+</html>

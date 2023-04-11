@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logi-develity"><img src="images/delivery.png" alt=""></div>
+            <div class="logo"><img src="images/logo.png" alt="" class="hinh"></div>
+            <div class="login">
+                <div class="cart">
+                    <a href="cart.html" class="thea">Giỏ hàng<i class="fas fa-shopping-cart text-primary"></i><span class="khong">o</span></a>
+                </div>
+                <div class="car1">
+                <div class="vn">VN|EN</div>
+                <div class="dn" onclick="dn();">Đăng nhập</div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="phuclong.html">Trang chủ</a></li>
+                <li><a href="">Cà phê</a></li>
+                <li><a href="">Trà</a></li>
+                <li><a href="">Thức uống</a></li>
+                <li><a href="sanpham.html">Sản Phẩm</a></li>
+                <li><a href="">Khuyến mãi</a></li>
+                <li><a href="form.html">Về Chúng tôi</a></li>
+                <li><a href="">Thẻ</a></li>
+                
+                
+            </ul>
+        </nav>
+        <aside class="banner">
+            <img src="images/a9.jpg" alt="" id="hinh1">
+            <!-- <div class="slide">
+                <i class="ti-angle-left" onclick="prev()"></i>
+                <i class="ti-angle-right" onclick="next()"></i>
+                   
+            </div> -->
+        </aside>
+        <article class="item">
+           <div class="imgg">
+            <img src="images/a4.png" alt="" id="img1">
+           </div>
+            <div class="product1">
+                <p><H2>Trà Lài Túi Tam Giác</H2></p>
+                <p class="pri">80,000 đ</p>
+                <p>Mã sản phẩm: 60000093</p>
+                <label><b>Số lượng sản phẩm</b></label>
+                <div class="add">
+                    <span class="tru">-</span>
+                    <span class="mot">1</span>
+                    <span class="cong">+</span>
+                </div>
+                <div class="dathang" style="border: 1px green solid; border-radius: 5px; text-align: center; margin-top: 30px; width: 150px; font-weight: 500; " >
+                   <a href="cart.html" style="text-decoration: none; color: black;">Đặt hàng</a> 
+                </div>
+           </div>
+            
+            <div class="content">
+                
+                <ul>
+                    <li><h2 style="color: green;">Thông tin sản phẩm</h2></li>
+                    <li>Quy cách: 3g x 10 gói  </li>
+                    <hr>
+                    <li>Mô tả: Trà lài là sự kết hợp hoàn hảo giữa lá trà xanh chất lượng cao và hoa lài. Trà có mùi thơm tự nhiên của hoa lài, màu vàng đẹp, vị ngọt của hoa lài và vị đắng nhẹ của trà tạo nên cảm giác khoan khoái và thư giãn cho người dùng.</li>
+                </ul>
+                
+                <ul>
+                    <li><h2 style="color: green;">Hướng dẫn sử dụng</h2></li>
+                    <li>Bảo quản: nơi khô thoáng</li>
+                    <hr>
+                    <li>Hạn sử dụng: xem trên bao bì</li>
+                    <hr>
+                    <li>Cách pha trà: Cho gói trà vào tách, đổ nước sôi vào. Ngâm khoảng 2 - 3 phút, nhúng gói trà 5 lần rồi lấy ra. Giờ bạn có thể thưởng thức</li>
+                </ul>
+            </div>
+        </article>
+        <hr>
+        <H2>Sản phẩm liên quan</H2>
+        <aside class="sanphamlienquan">
+            
+            <div class="sanpham" style="border: none;">
+                <a href=""><img src="images/a3.png" alt="" class="img"></a>
+                <p>Trà ô long ủ lạnh</p>
+                <p class="gam">3g x 10 gói</p>
+                <p class="price"> 80,000</p>
+                
+            </div>
+            <div class="sanpham" style="border: none;">
+                <a href=""><img src="images/a4.png" alt="" class="img"></a>
+                <p>Trà </p>
+                <p class="gam">3g x 10 gói</p>
+                <p class="price"> 80,000</p>
+                
+            </div>
+            <div class="sanpham" style="border: none;">
+                <a href=""><img src="images/a5.png" alt="" class="img"></a>
+                <p>Trà sen túi tam giác</p>
+                <p class="gam">3g x 10 gói</p>
+                <p class="price"> 80,000</p>
+                
+            </div>
+            <!-- <div class="sanpham" style="border: none;">
+                <a href=""><img src="images/a5.png" alt="" class="img"></a>
+                <p>Trà sen túi tam giác</p>
+                <p class="gam">3g x 10 gói</p>
+                <p class="price"> 80,000</p>
+                
+            </div> -->
+        </aside>
+        <div class="login-form-container">  
+            <form action="">
+                <div id="close-login-btn" onclick="closee();">x</div>
+                <h3>Phúc Long Xin Chào</h3>
+                <span>Username</span>
+                <input type="text" name="" class="box" placeholder="enter your phone number" id="">
+                <span>Password</span>
+                <input type="password" name="" class="box" placeholder="enter your password">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="remember_me">
+                    <label for="remember_me">Remember me ?</label>
+                </div>
+                <input type="submit" value="sign in" class="btn" name="" id="">
+                <p>Forget password ? <a>Click here </a></p>
+                <p>Don't have an account ? <a>Create one</a></p>
+            </form>
+        </div>
+        
+        <footer>
+            <p><b>Trụ sở chính</b>: Công ty Cổ Phần Phúc Long Heritage - ĐKKD: 0316 871719
+                do sở KHĐT TPHCM cấp lần đầu ngày 21/05/2021</p>
+                <p><b>Nhà máy</b>: D_8D_CN Đường XE 1, Khu Công Nghiệp Mỹ Phước III, phường Mỹ Phước, thị xã Bến Cát, tỉnh Bình Dương, Việt Nam</p>
+                <p><b>Địa chỉ</b>: Phòng 702, Tầng 7, Tòa nhà Central Plaza, số 17 Lê Duẩn, phường Bến Nghé, quận 1, Hồ Chí Minh</p>
+                <p><b>Điện thoại</b>: 1900 234 518 (Ext.9100/ 9102)</p>
+                <p><b>Fax</b>: (028) 6263 0379</p>
+                <p><b>Email</b>: sales@phuclong.masangroup.com</p>
+        </footer>
+    </div>
+   
+</body>
+<!-- <script>
+    var c = ["images/96859c993fbc5a-bannerkm.jpg","images/traolong1.jpg","images/berry.jpg"];
+    var a = ["images/logo.png","images/logo_1.png","images/logo_2.png"]
+    index=0;
+    img = function logo(){
+        var b = document.getElementsByClassName("hinh")[0];
+        b.src = a[index];
+        index++;
+        if(index == 2)index=0;
+
+    }
+        setInterval(img,800);
+        function prev(){
+            index--;
+            if(index < 0){
+                index = c.length-1
+            }
+           var hinh = document.getElementById("hinh1");
+            hinh.src = c[index];
+        }
+        function next(){
+            index++;
+            if(index >= c.length){
+                index = 0;
+            }
+           var hinh = document.getElementById("hinh1");
+            hinh.src = c[index];
+        }
+
+</script> -->
+<script>
+     function dn(){
+            let loginform = document.querySelector(".login-form-container");
+            loginform.classList.toggle('active');
+        }
+        function closee(){
+            let loginform = document.querySelector(".login-form-container");
+            loginform.classList.remove('active');
+        }
+
+</script>
+</html>

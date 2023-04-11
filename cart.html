@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logi-develity"><img src="images/delivery.png" alt=""></div>
+            <div class="logo"><img src="images/logo.png" alt="" class="hinh"></div>
+            <div class="login">
+                
+                <div class="cart">
+                    
+                    <a href="" class="thea">Giỏ hàng<i class="fas fa-shopping-cart text-primary"></i><span class="khong">o</span></a>
+                </div>
+                <div class="car1">
+                <div class="vn">VN|EN</div>
+                <div class="dn" onclick="dn();">Đăng nhập</div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="phuclong.html">Trang chủ</a></li>
+                <li><a href="">Cà phê</a></li>
+                <li><a href="">Trà</a></li>
+                <li><a href="">Thức uống</a></li>
+                <li><a href="sanpham.html">Sản Phẩm</a></li>
+                <li><a href="">Khuyến mãi</a></li>
+                <li><a href="form.html">Về Chúng tôi</a></li>
+                <li><a href="">Thẻ</a></li>
+                
+            </li>
+        </nav>
+        <aside class="banner">
+            <img src="images/96859c993fbc5a-bannerkm.jpg" alt="" id="hinh1">
+            <div class="slide">
+                <i class="ti-angle-left" onclick="prev()"></i>
+                <i class="ti-angle-right" onclick="next()"></i>
+                   
+            </div>
+         
+        </aside>
+        <div style="text-align: center; "><h1 style="color: green;">Phúc Long Xin Chào</h1></div>
+         <article id="giohang">
+            
+            <div class="show-cart">
+                <h2 class="ds">Danh sách sản phẩm</h2>
+                <hr>
+                <table id="myCart">
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Hình ảnh</th>
+                        <th>Số lượng</th>
+                        <th>Gía</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                    <tbody id="showcar">
+                        <tr>
+                            <td><p>1</p></td>
+                            <td><p>Trà lài túi tam giác</p></td>
+                            <td><img src="images/a1.png" alt="" class="hinh"></td>
+                            <td><input type="number" style="width: 40px;" value="1"></td>
+                            <td><p>80.000</p></td>
+                            <td>80.000</td>
+                        </tr>
+                        <tr>
+                            <td><p>1</p></td>
+                            <td><p>Trà lài túi tam giác</p></td>
+                            <td><img src="images/a3.png" alt="" class="hinh"></td>
+                            <td><input type="number" style="width: 40px;" value="1"></td>
+                            <td><p>80.000</p></td>
+                            <td>80.000</td>
+                        </tr>
+                    </tr>
+                    <th colspan=5> Tổng tiền: </th>
+                    <th>160.000</th>
+                    </tr>
+                       
+                    
+                    </tbody>
+                </table>
+            </div>
+        </article> 
+         
+        <aside id="form">
+            
+            <form action="">
+                <h1>Đặt hàng</h1>
+       <p> <label>Sản Phẩm</label> <input type="text" id="tensp" onblur="checkTenSp();" class="txt"></p>
+        <div id="checkTen"></div>
+         
+        <p>
+            <label>Tỉnh/Thành phố:</label>
+            <select name="" id="loaisp" onblur="checkLoaiSanPham();" class="txt">
+            <option value="0">Chọn</option>
+            <option value="1">Thành phố HCM</option>
+            <option value="2">Hà Nội</option>
+            <option value="3">Đà Nẳng</option>
+            <option value="3">Hải Phòng</option>
+            <option value="3">Cần Thơ</option>
+            <option value="3">...</option>
+        </select> <br></p>
+        <div id="checkLoai"></div>
+        <p><label>Gmail:</label> <input type="email" id="dongia" onblur="checkDonGia();" class="txt"></p>
+        <div id="donGia"></div>
+        <p><label>Nới nhận hàng:</label>
+            <input type="radio" name="noith" value="noithanh" onclick="hienthi(false);"> Nội Thành
+            <input type="radio" name="noith" value="ngoaithanh"  onclick="hienthi(true);">Ngoại Thành <br></p>
+        <div id="boxVC"> <label>phí vận chuyển:</label> <input type="text" id="pvc" class="txt"></div>
+        <p class="but"><button type="button" onclick="validate();">Đặt hàng</button></p>
+            </form>
+        </aside>
+        <hr>
+        <div class="title"><H2>Sản phẩm liên quan</H2></div>
+        <aside class="sanphamlienquan">
+           
+            <div class="sanpham" style="border: none;">
+                <a href=""><img src="images/a3.png" alt="" class="img"></a>
+                <p>Trà ô long ủ lạnh</p>
+                <p class="gam">3g x 10 gói</p>
+                <p class="price"> 80,000</p>
+                
+            </div>
+            <div class="sanpham" style="border: none;">
+                <a href=""><img src="images/a4.png" alt="" class="img"></a>
+                <p>Trà </p>
+                <p class="gam">3g x 10 gói</p>
+                <p class="price"> 80,000</p>
+                
+            </div>
+            <div class="sanpham" style="border: none;">
+                <a href=""><img src="images/a5.png" alt="" class="img"></a>
+                <p>Trà sen túi tam giác</p>
+                <p class="gam">3g x 10 gói</p>
+                <p class="price"> 80,000</p>
+                
+            </div>
+          
+        </aside>
+        <div class="login-form-container">  
+            <form action="">
+                <div id="close-login-btn" onclick="closee();">x</div>
+                <h3>Phúc Long Xin Chào</h3>
+                <span>Username</span>
+                <input type="text" name="" class="box" placeholder="enter your phone number" id="">
+                <span>Password</span>
+                <input type="password" name="" class="box" placeholder="enter your password">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="remember_me">
+                    <label for="remember_me">Remember me ?</label>
+                </div>
+                <input type="submit" value="sign in" class="btn" name="" id="">
+                <p>Forget password ? <a>Click here </a></p>
+                <p>Don't have an account ? <a>Create one</a></p>
+            </form>
+        </div>
+        
+        <footer>
+            <p><b>Trụ sở chính</b>: Công ty Cổ Phần Phúc Long Heritage - ĐKKD: 0316 871719
+                do sở KHĐT TPHCM cấp lần đầu ngày 21/05/2021</p>
+                <p><b>Nhà máy</b>: D_8D_CN Đường XE 1, Khu Công Nghiệp Mỹ Phước III, phường Mỹ Phước, thị xã Bến Cát, tỉnh Bình Dương, Việt Nam</p>
+                <p><b>Địa chỉ</b>: Phòng 702, Tầng 7, Tòa nhà Central Plaza, số 17 Lê Duẩn, phường Bến Nghé, quận 1, Hồ Chí Minh</p>
+                <p><b>Điện thoại</b>: 1900 234 518 (Ext.9100/ 9102)</p>
+                <p><b>Fax</b>: (028) 6263 0379</p>
+                <p><b>Email</b>: sales@phuclong.masangroup.com</p>
+        </footer>
+    </div>
+   
+</body>
+<script>
+    var c = ["images/96859c993fbc5a-bannerkm.jpg","images/traolong1.jpg","images/berry.jpg"];
+    var a = ["images/logo.png","images/logo_1.png","images/logo_2.png"]
+    index=0;
+    img = function logo(){
+        var b = document.getElementsByClassName("hinh")[0];
+        b.src = a[index];
+        index++;
+        if(index == 2)index=0;
+
+    }
+        setInterval(img,800);
+        function prev(){
+            index--;
+            if(index < 0){
+                index = c.length-1
+            }
+           var hinh = document.getElementById("hinh1");
+            hinh.src = c[index];
+        }
+        function next(){
+            index++;
+            if(index >= c.length){
+                index = 0;
+            }
+           var hinh = document.getElementById("hinh1");
+            hinh.src = c[index];
+        }
+       
+        function dn(){
+            let loginform = document.querySelector(".login-form-container");
+            loginform.classList.toggle('active');
+        }
+        function closee(){
+            let loginform = document.querySelector(".login-form-container");
+            loginform.classList.remove('active');
+        }
+        function checkTenSp(){
+        var tensp = document.getElementById('tensp').value;
+        var sp = document.getElementById("checkTen");
+        if(tensp == ""){
+           
+           sp.innerText = "Vui lòng nhập lại";
+           sp.style.color ="red"
+        }else if(tensp.length <= 6){
+            sp.innerText = "Vui lòng nhập nhiều hơn 6 chữ số";
+           sp.style.color ="red" 
+        }else{
+            document.getElementById("checkTen").innerText = "";
+        }
+    }
+    function checkDonGia(){
+        var dongia = document.getElementById('dongia').value;
+        if(dongia ==""){
+            document.getElementById("donGia").innerText = "Vui lòng nhập đơn giá";
+            document.getElementById("donGia").style.color = "red"; 
+        }else if(isNaN(dongia)){
+            document.getElementById('donGia').innerText = "Vui lòng nhập số";
+            document.getElementById("donGia").style.color = "red"; 
+        }else if(dongia.length <=5){
+            document.getElementById('donGia').innerText = "Vui lòng nhập giá hơn 5 chữ số";
+            document.getElementById("donGia").style.color = "red"; 
+
+        }else{
+            document.getElementById("donGia").innerText = "";
+        }
+    }
+    function checkLoaiSanPham(){
+        var loaisp = document.getElementById('loaisp').value;
+        if(loaisp ==0 ){
+            document.getElementById("checkLoai").innerText = "Vui lòng chọn loại";
+            document.getElementById("checkLoai").style.color = "red";
+        }else
+        document.getElementById('checkLoai').innerText = "";
+    }
+    function validate(){
+        checkDonGia();
+        checkTenSp();
+        checkLoaiSanPham();
+    }
+    function hienthi(b){
+        document.getElementById("boxVC").style.display = b?"block":"none";
+
+    }
+    function dn(){
+            let loginform = document.querySelector(".login-form-container");
+            loginform.classList.toggle('active');
+        }
+        function closee(){
+            let loginform = document.querySelector(".login-form-container");
+            loginform.classList.remove('active');
+        }
+</script>
+</html>

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-width: 500px;
+    height: 400px;
+    background-color: aqua;
+    margin: 0 auto;
+}
+nav{
+    font-size: 16px;
+    line-height: 24px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+}
+header{
+    display: flex;
+    background-color: bisque;
+    height: 300px;
+}
+article{
+    height: 400px;
+}
+.product{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.product img{
+    width: 50%;
+    
+}
+footer{
+    background-color: black;
+    font-size: 9px;
+    color: white;
+}
